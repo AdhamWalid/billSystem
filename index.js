@@ -8,7 +8,8 @@ const timeElapsed = Date.now();
 const today = new Date(timeElapsed);
 
 // Styling
-const chalk = require('chalk')
+const chalk = require('chalk');
+const { exit } = require('process');
 const log = console.log;
 let success = chalk.green
 prompt.start()
@@ -81,15 +82,12 @@ if (result.choice.includes('1')){
 
     });
 
-    log('still working.')
-
-
 
 }else if (result.choice.includes('2')){
 
     console.clear()
     log('Okay boss , Have a great day.')
-
+    
 }
 
 })
